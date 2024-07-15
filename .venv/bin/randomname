@@ -1,4 +1,4 @@
-#!/home/jannis/Projects/DemoFlaskApp/.venv/bin/python3
+#!/Users/sudoleg/Projects/Personal/random/flask-demo/.venv/bin/python3.12
 # -*- coding: utf-8 -*-
 import re
 import sys

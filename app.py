@@ -10,10 +10,10 @@ redis = redis.Redis(host='redis', port=6379, decode_responses=True)
 def hello_world():
     return "Hello, World!"
 
-@app.route("/<x>")
-def hello_name(x):
-    name = redis.get(x)
+@app.route("/<first_name>")
+def hello_name(first_name):
+    name = redis.get(first_name)
     if not name:
         name = randomname.get_name()
-        redis.set(x, name)
+        redis.set(first_name, name)
     return "Hello, " + name + "!"

@@ -7,14 +7,17 @@ This is a simple Python Flask application that generates random names and assign
 To get started, you need to have Python, Flask, and Redis installed on your system. Follow these steps to set up the project:
 
 Clone the repository:
+    
     git clone https://github.com/your-username/flask-random-name-generator.git
     cd flask-random-name-generator
 
 Create and activate a virtual environment:
+    
     python3 -m venv venv
     source venv/bin/activate   # On Windows, use `venv\Scripts\activate`
 
 Install the dependencies:
+    
     pip install -r requirements.txt
 
 ***By default, the application will be accessible at http://localhost:5000.***

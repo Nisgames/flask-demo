@@ -1,3 +1,27 @@
+# Ignore virtual environment directory
+.venv/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore Redis dump files
+dump.rdb
+
+# Ignore environment variable files
+.env
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore other common files
+.DS_Store
+*.log
+*.sqlite3
+*.pid
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -161,25 +185,3 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-# Ignore virtual environment directory
-.venv/
-
-# Ignore Python cache files
-__pycache__/
-*.pyc
-*.pyo
-
-# Ignore Redis dump files
-dump.rdb
-
-# Ignore environment variable files
-.env
-
-# Ignore VS Code settings
-.vscode/
-
-# Ignore other common files
-.DS_Store
-*.log
-*.sqlite3
-*.pid

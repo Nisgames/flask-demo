@@ -4,7 +4,7 @@ import redis
 
 app = Flask(__name__)
 
-r = redis.Redis(host='redis', port=6379, decode_responses=True)
+redis = redis.Redis(host='redis', port=6379, decode_responses=True)
 
 @app.route("/")
 def hello_world():
@@ -12,8 +12,8 @@ def hello_world():
 
 @app.route("/<x>")
 def hello_name(x):
-    name = r.get(x)
+    name = redis.get(x)
     if not name:
         name = randomname.get_name()
-        r.set(x, name)
+        redis.set(x, name)
     return "Hello, " + name + "!"

@@ -8,8 +8,8 @@ To get started, you need to have Python, Flask, and Redis installed on your syst
 
 Clone the repository:
     
-    git clone https://github.com/your-username/flask-random-name-generator.git
-    cd flask-random-name-generator
+    git clone https://github.com/Nisgames/flask-demo.git
+    cd flask-demo
 
 Create and activate a virtual environment:
     

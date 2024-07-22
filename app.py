@@ -3,9 +3,15 @@ import randomname
 import redis
 import string
 
+import os
+
 app = Flask(__name__)
 
-redis = redis.Redis(host='redis', port=6379, decode_responses=True)
+if os.getenv("ENVIRONMENT") == "prod":
+    redis = redis.Redis(host='redis', port=6379, decode_responses=True)
+else:
+    redis = redis.Redis(host='localhost', port=6379, decode_responses=True)
+
 
 @app.route("/")
 def hello_world():

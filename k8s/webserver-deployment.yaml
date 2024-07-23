@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: webserver
-        image: your-webserver-image:tag
+        image: nisgames/flask-demo:v3
         resources:
           limits:
             memory: "128Mi"

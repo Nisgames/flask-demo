@@ -1,7 +1,6 @@
 from flask import Flask
 import randomname
 import redis
-import string
 
 import os
 
